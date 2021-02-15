@@ -1,6 +1,6 @@
 /* -------first-section------ */
 .first-section {
-  background: url("../../../assets/images/bg1.jpg");
+  background: url("../../assets/images/bg1.jpg");
   position: relative;
   height: 580px;
   background-position: center;
@@ -60,6 +60,7 @@ h2 {
 .service-img {
   width: 250px;
   height: 200px;
+  border-radius: 10px;
 }
 .service-item {
   width: 400px;
@@ -75,7 +76,7 @@ h2 {
 
 /* -----------Third-section-------- */
 .client-section {
-  background: url("../../../assets/images/bg.jpg") no-repeat;
+  background: url("../../assets/images/bg.jpg") no-repeat;
   position: relative;
   height: 350px;
   background-position: center;
