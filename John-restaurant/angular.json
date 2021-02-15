@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "John-restaurant"
+  "defaultProject": "John-restaurant",
+  "cli": {
+    "analytics": false
+  }
 }
