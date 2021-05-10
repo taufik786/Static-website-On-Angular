@@ -72,11 +72,17 @@ h2 {
   border-radius: 20px;
   padding: 30px 15px;
   padding-bottom: 55px;
+  cursor: pointer;
+}
+.service-item:hover{
+  background-color: paleturquoise;
+  box-shadow: 5px 5px 8px 1px rebeccapurple;
 }
 
 /* -----------Third-section-------- */
 .client-section {
-  background: url("../../assets/images/bg.jpg") no-repeat;
+  /* background: url("../../assets/images/bg1.jpg") no-repeat; */
+  background-color: rosybrown;
   position: relative;
   height: 350px;
   background-position: center;
@@ -98,8 +104,12 @@ h2 {
   justify-content: center;
 }
 .client-img > div > img {
-  width: 150px;
+  width: 180px;
   padding: 20px 25px;
+  cursor: pointer;
+}
+.client-img > div > img:hover {
+  box-shadow: 4px 2px 5px 5px grey;
 }
 /* fourth-section */
 .fourth-section {
@@ -110,6 +120,66 @@ h2 {
   width: 80%;
   margin: auto;
   padding: 20px;
+}
+
+ /* Fifth section  */
+ .contact-section{
+   padding-bottom: 55px;
+ }
+ form div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 3px;
+}
+form div label,input,button,textarea{
+  padding: 5px 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+}
+label{
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+textarea{
+  resize: none;
+}
+form button{
+  background-color: yellowgreen;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+form button:hover{
+  background-color: red;
+  color: white;
+}
+.hr-color{
+  display: flex;
+}
+hr{
+  margin: 5px 0;
+  width: 80%;
+  padding: 3px;
+  border: none;
+}
+.hr-1{
+  background-color: red;
+}
+.hr-2{
+  background-color: green;
+}
+.hr-3{
+  background-color: blue;
+}
+.contact-info{
+  width: 70%;
+  margin: auto;
+  margin-top: 8px;
 }
 
 /* footer  */
@@ -137,20 +207,23 @@ footer p {
     .service-section > div {
       flex-direction: column;
     }
+    form div{
+      width: 80%;
+    }
     .service-item{
       width: 80%;
       margin: 10px auto;
     }
     .client-img > div > img {
-      width: 100px;
+      width: 180px;
       padding: 20px 10px;
     }
   }
 
   @media screen and (max-width: 592px){
     .client-img > div > img {
-      width: 62px;
-      padding: 10px 5px;
+      width: 125px;
+      padding: 20px 5px;
     }
   }
 }

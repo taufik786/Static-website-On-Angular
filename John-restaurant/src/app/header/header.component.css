@@ -9,9 +9,11 @@
 }
 .navbar{
   display: flex;
-  /* border: 2px solid red; */
   background-color: rgba(7, 7, 128, 0.807);
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 .navbar ul{
   display: flex;
@@ -56,7 +58,7 @@ a.active{
 }
 
 /* /// responsiveness css /// */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 .navbar{
   flex-direction: column;
 }

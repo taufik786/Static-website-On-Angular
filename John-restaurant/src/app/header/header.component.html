@@ -2,13 +2,13 @@
   <div>
     <img routerLink="/" class="logo" src="../../assets/images/logo.png" alt="logo">
   </div>
-  <ul>
+  <ul *ngIf="isCollapsed">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
     <!-- <li routerLinkActive="active" (click)="toServices()"><a >Services</a></li> -->
     <li routerLinkActive="active"><a href="#services" >Services</a></li>
     <li routerLinkActive="active"><a href="#clients">Our Clients</a></li>
     <li routerLinkActive="active" ><a href="#about">About</a></li>
-    <li routerLinkActive="active"><a routerLink="/contact">Contact Us</a></li>
+    <li routerLinkActive="active"><a href="#contact-us">Contact Us</a></li>
   </ul>
   <div class="burger" (click)="toggleNavbar()">
     <div class="line"></div>

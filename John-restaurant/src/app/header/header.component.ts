@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  showme: boolean=false;
+  isCollapsed = true;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,7 +24,7 @@ export class HeaderComponent implements OnInit {
   // }
 
   toggleNavbar(){
-    // this.showme=!this.showme;
+    this.isCollapsed = !this.isCollapsed;
     // document.querySelector('ul').style.display= 'block'
   }
 }
