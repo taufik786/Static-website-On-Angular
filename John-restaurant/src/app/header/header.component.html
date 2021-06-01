@@ -1,23 +1,28 @@
-<nav class="navbar">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top p-0">
   <div>
     <img routerLink="/" class="logo" src="../../assets/images/logo.png" alt="logo">
   </div>
-  <ul *ngIf="isCollapsed">
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
-    <!-- <li routerLinkActive="active" (click)="toServices()"><a >Services</a></li> -->
-    <li routerLinkActive="active"><a href="#services" >Services</a></li>
-    <li routerLinkActive="active"><a href="#clients">Our Clients</a></li>
-    <li routerLinkActive="active" ><a href="#about">About</a></li>
-    <li routerLinkActive="active"><a href="#contact-us">Contact Us</a></li>
-  </ul>
-  <div class="burger" (click)="toggleNavbar()">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation" (click)="isMenuCollapsed = !isMenuCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a
+          class="nav-link text-white pr-4" href="#home">Home</a></li>
+      <li class="nav-item" routerLinkActive="active" (click)="isMenuCollapsed = true"><a
+          class="nav-link text-white pr-4" href="#services">Services</a></li>
+      <li class="nav-item" routerLinkActive="active" (click)="isMenuCollapsed = true"><a
+          class="nav-link text-white pr-4" href="#clients">Our Clients</a></li>
+      <li class="nav-item" routerLinkActive="active" (click)="isMenuCollapsed = true"><a
+          class="nav-link text-white pr-4" href="#about">About</a></li>
+      <li class="nav-item" routerLinkActive="active" (click)="isMenuCollapsed = true"><a
+          class="nav-link text-white pr-4" href="#contact-us">Contact Us</a></li>
+    </ul>
   </div>
 
 </nav>
 
-
 <router-outlet></router-outlet>
-

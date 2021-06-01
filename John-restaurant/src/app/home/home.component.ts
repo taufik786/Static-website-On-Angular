@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+t: any;
   ngOnInit(): void {
+    // this.t = document.getElementsByClassName('overlay');
+    // this.t.style.backgroundcolor = 'red';
+    // let t = document.querySelectorAll('h1');
+    // this.t.style.color = 'red';
   }
 
 }
